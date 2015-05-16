@@ -56,7 +56,6 @@ input[type="checkbox"] {
   line-height: normal;
 }
 
-// Set the height of file controls to match text inputs
 input[type="file"] {
   display: block;
 }
@@ -175,13 +174,17 @@ input[type="search"] {
 // text within the input to become vertically misaligned. As a workaround, we
 // set a pixel line-height that matches the given height of the input, but only
 // for Safari. See https://bugs.webkit.org/show_bug.cgi?id=139848
+//
+// Note that as of 8.3, iOS doesn't support `datetime` or `week`.
 
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
   input[type="date"],
   input[type="time"],
   input[type="datetime-local"],
   input[type="month"] {
-    line-height: @input-height-base;
+    &.form-control {
+      line-height: @input-height-base;
+    }
 
     &.input-sm,
     .input-group-sm & {
@@ -401,13 +404,15 @@ input[type="checkbox"] {
   pointer-events: none;
 }
 .input-lg + .form-control-feedback,
-.input-group-lg + .form-control-feedback {
+.input-group-lg + .form-control-feedback,
+.form-group-lg .form-control + .form-control-feedback {
   width: @input-height-large;
   height: @input-height-large;
   line-height: @input-height-large;
 }
 .input-sm + .form-control-feedback,
-.input-group-sm + .form-control-feedback {
+.input-group-sm + .form-control-feedback,
+.form-group-sm .form-control + .form-control-feedback {
   width: @input-height-small;
   height: @input-height-small;
   line-height: @input-height-small;
@@ -576,7 +581,7 @@ input[type="checkbox"] {
   // Reposition the icon because it's now within a grid column and columns have
   // `position: relative;` on them. Also accounts for the grid gutter padding.
   .has-feedback .form-control-feedback {
-    right: (@grid-gutter-width / 2);
+    right: floor((@grid-gutter-width / 2));
   }
 
   // Form group sizes
