@@ -1,14 +1,12 @@
-# [Bootstrap](http://getbootstrap.com)
-[![Slack](https://bootstrap-slack.herokuapp.com/badge.svg)](https://bootstrap-slack.herokuapp.com)
-![Bower version](https://img.shields.io/bower/v/bootstrap.svg)
-[![npm version](https://img.shields.io/npm/v/bootstrap.svg)](https://www.npmjs.com/package/bootstrap)
-[![Build Status](https://img.shields.io/travis/twbs/bootstrap/master.svg)](https://travis-ci.org/twbs/bootstrap)
-[![devDependency Status](https://img.shields.io/david/dev/twbs/bootstrap.svg)](https://david-dm.org/twbs/bootstrap#info=devDependencies)
-[![Selenium Test Status](https://saucelabs.com/browser-matrix/bootstrap.svg)](https://saucelabs.com/u/bootstrap)
+# [Bootstrap](http://getbootstrap.com) Grid MS 
 
 Bootstrap is a sleek, intuitive, and powerful front-end framework for faster and easier web development, created by [Mark Otto](https://twitter.com/mdo) and [Jacob Thornton](https://twitter.com/fat), and maintained by the [core team](https://github.com/orgs/twbs/people) with the massive support and involvement of the community.
 
 To get started, check out <http://getbootstrap.com>!
+
+## What is this fork for?
+
+This fork addresses the problem of the missing 320px break point (col-xs) by implementing col-ms (480px) as [discussed in issue \#10203](https://github.com/twbs/bootstrap/issues/10203).
 
 ## Table of contents
 
@@ -25,7 +23,7 @@ To get started, check out <http://getbootstrap.com>!
 
 Several quick start options are available:
 
-- [Download the latest release](https://github.com/twbs/bootstrap/archive/v3.3.4.zip).
+- [Download the latest release](https://github.com/twbs/bootstrap/archive/v3.3.5.zip).
 - Clone the repo: `git clone https://github.com/twbs/bootstrap.git`.
 - Install with [Bower](http://bower.io): `bower install bootstrap`.
 - Install with [npm](https://www.npmjs.com): `npm install bootstrap`.
@@ -44,9 +42,11 @@ bootstrap/
 │   ├── bootstrap.css
 │   ├── bootstrap.css.map
 │   ├── bootstrap.min.css
+│   ├── bootstrap.min.css.map
 │   ├── bootstrap-theme.css
 │   ├── bootstrap-theme.css.map
-│   └── bootstrap-theme.min.css
+│   ├── bootstrap-theme.min.css
+│   └── bootstrap-theme.min.css.map
 ├── js/
 │   ├── bootstrap.js
 │   └── bootstrap.min.js
@@ -115,6 +115,8 @@ Get updates on Bootstrap's development and chat with the project maintainers and
 ## Versioning
 
 For transparency into our release cycle and in striving to maintain backward compatibility, Bootstrap is maintained under [the Semantic Versioning guidelines](http://semver.org/). Sometimes we screw up, but we'll adhere to those rules whenever possible.
+
+See [the Releases section of our GitHub project](https://github.com/twbs/bootstrap/releases) for changelogs for each release version of Bootstrap. Release announcement posts on [the official Bootstrap blog](http://blog.getbootstrap.com) contain summaries of the most noteworthy changes made in each release.
 
 
 
