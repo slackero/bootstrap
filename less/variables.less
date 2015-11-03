@@ -344,6 +344,11 @@
 //
 //## Define the maximum width of `.container` for different screen sizes.
 
+// Mid small screen / phablet
+@container-phablet:            (440px + @grid-gutter-width);
+//** For `@screen-ms-min` and up.
+@container-ms:                 @container-phablet;
+
 // Small screen / tablet
 @container-tablet:             (720px + @grid-gutter-width);
 //** For `@screen-sm-min` and up.

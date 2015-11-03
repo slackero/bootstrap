@@ -1593,7 +1593,7 @@ pre code {
 }
 @media (min-width: 480px) {
   .container {
-    width: 750px;
+    width: 470px;
   }
 }
 @media (min-width: 768px) {
