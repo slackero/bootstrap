@@ -26,7 +26,7 @@ This fork addresses the problem of the missing 320px break point (col-xs) by imp
 
 Several quick start options are available:
 
-* [Download the latest release](https://github.com/slackero/bootstrap/archive/v3.3.6-ms.zip).
+* [Download the latest release](https://github.com/slackero/bootstrap/archive/v3.3.7-ms.zip).
 * Clone the repo: `git clone https://github.com/slackero/bootstrap.git`.
 
 Read the [Getting started page](http://getbootstrap.com/getting-started/) for information on the framework contents, templates and examples, and more.

@@ -1,5 +1,5 @@
 /*!
- * Bootstrap v3.3.6 (http://getbootstrap.com)
+ * Bootstrap v3.3.7 (http://getbootstrap.com)
  * Copyright 2011-2016 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
@@ -1097,7 +1097,6 @@ a:focus {
   text-decoration: underline;
 }
 a:focus {
-  outline: thin dotted;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
@@ -2697,7 +2696,6 @@ select[size] {
 input[type="file"]:focus,
 input[type="radio"]:focus,
 input[type="checkbox"]:focus {
-  outline: thin dotted;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
@@ -3197,7 +3195,6 @@ select[multiple].input-lg {
 .btn.focus,
 .btn:active.focus,
 .btn.active.focus {
-  outline: thin dotted;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
@@ -5002,7 +4999,6 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   background-color: #fff;
   border-color: #ddd;
   cursor: not-allowed;
-  pointer-events: none;
 }
 .pagination-lg > li > a,
 .pagination-lg > li > span {
@@ -5082,7 +5078,6 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   color: #777777;
   background-color: #fff;
   cursor: not-allowed;
-  pointer-events: none;
 }
 .label {
   display: inline;

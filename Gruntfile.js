@@ -231,6 +231,7 @@ module.exports = function (grunt) {
         compatibility: 'ie8',
         keepSpecialComments: '*',
         sourceMap: true,
+        sourceMapInlineSources: true,
         advanced: false
       },
       minifyCore: {
@@ -276,7 +277,7 @@ module.exports = function (grunt) {
     copy: {
       fonts: {
         expand: true,
-        src: 'fonts/*',
+        src: 'fonts/**',
         dest: 'dist/'
       },
       docs: {
@@ -315,13 +316,27 @@ module.exports = function (grunt) {
     htmlmin: {
       dist: {
         options: {
+          collapseBooleanAttributes: true,
           collapseWhitespace: true,
           conservativeCollapse: true,
-          minifyCSS: true,
+          decodeEntities: false,
+          minifyCSS: {
+            compatibility: 'ie8',
+            keepSpecialComments: 0
+          },
           minifyJS: true,
+          minifyURLs: false,
           processConditionalComments: true,
           removeAttributeQuotes: true,
-          removeComments: true
+          removeComments: true,
+          removeOptionalAttributes: true,
+          removeOptionalTags: true,
+          removeRedundantAttributes: true,
+          removeScriptTypeAttributes: true,
+          removeStyleLinkTypeAttributes: true,
+          removeTagWhitespace: false,
+          sortAttributes: true,
+          sortClassName: true
         },
         expand: true,
         cwd: '_gh_pages',
@@ -352,7 +367,7 @@ module.exports = function (grunt) {
       options: {
         ignore: [
           'Attribute "autocomplete" not allowed on element "button" at this point.',
-          'Attribute "autocomplete" is only allowed when the input type is "color", "date", "datetime", "datetime-local", "email", "month", "number", "password", "range", "search", "tel", "text", "time", "url", or "week".',
+          'Attribute "autocomplete" is only allowed when the input type is "color", "date", "datetime", "datetime-local", "email", "hidden", "month", "number", "password", "range", "search", "tel", "text", "time", "url", or "week".',
           'Element "img" is missing required attribute "src".'
         ]
       },
