@@ -1,0 +1,3 @@
+[submodule "vendor/flexbox-grid-less"]
+	path = vendor/flexbox-grid-less
+	url = https://slackero@github.com/slackero/flexbox-grid-less.git
