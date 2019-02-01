@@ -2727,7 +2727,7 @@ th {
   min-height: 0.01%;
   overflow-x: auto;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 479px) {
   .table-responsive {
     width: 100%;
     margin-bottom: 15px;
@@ -4487,7 +4487,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar-fixed-bottom .navbar-collapse {
   max-height: 340px;
 }
-@media (max-device-width: 480px) and (orientation: landscape) {
+@media (max-device-width: 320px) and (orientation: landscape) {
   .navbar-fixed-top .navbar-collapse,
   .navbar-fixed-bottom .navbar-collapse {
     max-height: 200px;
@@ -6834,7 +6834,7 @@ button.close {
 .visible-lg-inline-block {
   display: none !important;
 }
-@media (max-width: 767px) {
+@media (max-width: 479px) {
   .visible-xs {
     display: block !important;
   }
@@ -6849,17 +6849,17 @@ button.close {
     display: table-cell !important;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 479px) {
   .visible-xs-block {
     display: block !important;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 479px) {
   .visible-xs-inline {
     display: inline !important;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 479px) {
   .visible-xs-inline-block {
     display: inline-block !important;
   }
@@ -6984,7 +6984,7 @@ button.close {
     display: inline-block !important;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 479px) {
   .hidden-xs {
     display: none !important;
   }
