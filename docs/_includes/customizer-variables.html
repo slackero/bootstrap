@@ -597,6 +597,21 @@
   </div>
   <div class="clearfix"></div>
   <div class="col-xs-4">
+    <label for="input-@screen-ms">@screen-ms</label>
+    <input class="form-control" id="input-@screen-ms" type="text" aria-describedby="help-block-@screen-ms" value="480px" data-var="@screen-ms"/>
+    <p class="help-block" id="help-block-@screen-ms">Deprecated <code>@screen-ms</code> as of v3.0.1</p>
+  </div>
+  <div class="col-xs-4">
+    <label for="input-@screen-ms-min">@screen-ms-min</label>
+    <input class="form-control" id="input-@screen-ms-min" type="text" value="@screen-ms" data-var="@screen-ms-min"/>
+  </div>
+  <div class="col-xs-4">
+    <label for="input-@screen-tablet">@screen-tablet</label>
+    <input class="form-control" id="input-@screen-tablet" type="text" aria-describedby="help-block-@screen-tablet" value="@screen-ms-min" data-var="@screen-tablet"/>
+    <p class="help-block" id="help-block-@screen-tablet">Deprecated <code>@screen-tablet</code> as of v3.0.1</p>
+  </div>
+  <div class="clearfix"></div>
+  <div class="col-xs-4">
     <label for="input-@screen-sm">@screen-sm</label>
     <input class="form-control" id="input-@screen-sm" type="text" aria-describedby="help-block-@screen-sm" value="768px" data-var="@screen-sm"/>
     <p class="help-block" id="help-block-@screen-sm">Deprecated <code>@screen-sm</code> as of v3.0.1</p>
@@ -646,9 +661,14 @@
     <input class="form-control" id="input-@screen-xs-max" type="text" value="(@screen-sm-min - 1)" data-var="@screen-xs-max"/>
   </div>
   <div class="col-xs-4">
+    <label for="input-@screen-ms-max">@screen-ms-max</label>
+    <input class="form-control" id="input-@screen-ms-max" type="text" value="(@screen-sm-min - 1)" data-var="@screen-ms-max"/>
+  </div>
+  <div class="col-xs-4">
     <label for="input-@screen-sm-max">@screen-sm-max</label>
     <input class="form-control" id="input-@screen-sm-max" type="text" value="(@screen-md-min - 1)" data-var="@screen-sm-max"/>
   </div>
+  <div class="clearfix"></div>
   <div class="col-xs-4">
     <label for="input-@screen-md-max">@screen-md-max</label>
     <input class="form-control" id="input-@screen-md-max" type="text" value="(@screen-lg-min - 1)" data-var="@screen-md-max"/>
@@ -683,9 +703,19 @@
 <p>Define the maximum width of <code>.container</code> for different screen sizes.</p>
 <div class="row">
   <div class="col-xs-4">
+    <label for="input-@container-phablet">@container-phablet</label>
+    <input class="form-control" id="input-@container-phablet" type="text" value="(440px + @grid-gutter-width)" data-var="@container-phablet"/>
+  </div>
+  <div class="col-xs-4">
+    <label for="input-@container-ms">@container-ms</label>
+    <input class="form-control" id="input-@container-ms" type="text" aria-describedby="help-block-@container-ms" value="@container-phablet" data-var="@container-ms"/>
+    <p class="help-block" id="help-block-@container-ms">For <code>@screen-ms-min</code> and up.</p>
+  </div>
+  <div class="col-xs-4">
     <label for="input-@container-tablet">@container-tablet</label>
     <input class="form-control" id="input-@container-tablet" type="text" value="(720px + @grid-gutter-width)" data-var="@container-tablet"/>
   </div>
+  <div class="clearfix"></div>
   <div class="col-xs-4">
     <label for="input-@container-sm">@container-sm</label>
     <input class="form-control" id="input-@container-sm" type="text" aria-describedby="help-block-@container-sm" value="@container-tablet" data-var="@container-sm"/>
@@ -695,12 +725,12 @@
     <label for="input-@container-desktop">@container-desktop</label>
     <input class="form-control" id="input-@container-desktop" type="text" value="(940px + @grid-gutter-width)" data-var="@container-desktop"/>
   </div>
-  <div class="clearfix"></div>
   <div class="col-xs-4">
     <label for="input-@container-md">@container-md</label>
     <input class="form-control" id="input-@container-md" type="text" aria-describedby="help-block-@container-md" value="@container-desktop" data-var="@container-md"/>
     <p class="help-block" id="help-block-@container-md">For <code>@screen-md-min</code> and up.</p>
   </div>
+  <div class="clearfix"></div>
   <div class="col-xs-4">
     <label for="input-@container-large-desktop">@container-large-desktop</label>
     <input class="form-control" id="input-@container-large-desktop" type="text" value="(1140px + @grid-gutter-width)" data-var="@container-large-desktop"/>
