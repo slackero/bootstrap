@@ -27,7 +27,7 @@ This fork addresses the problem of the missing 320px break point (col-xs) by imp
 
 Several quick start options are available:
 
-* [Download the latest release](https://github.com/slackero/bootstrap/archive/v3.4.0-ms.zip).
+* [Download the latest release](https://github.com/slackero/bootstrap/archive/v3.4.1-ms.zip).
 * Clone the repo: `git clone https://github.com/slackero/bootstrap.git`.
 * Install with [Bower](https://bower.io/): `bower install bootstrap`.
 * Install with [npm](https://www.npmjs.com/): `npm install bootstrap@3`.
@@ -144,4 +144,4 @@ Thanks to [BrowserStack](https://www.browserstack.com/) for providing the infras
 
 ## Copyright and license
 
-Code and documentation copyright 2011-2018 Twitter, Inc. Code released under [the MIT license](https://github.com/twbs/bootstrap/blob/master/LICENSE). Docs released under [Creative Commons](https://github.com/twbs/bootstrap/blob/master/docs/LICENSE).
+Code and documentation copyright 2011-2019 Twitter, Inc. Code released under [the MIT license](https://github.com/twbs/bootstrap/blob/master/LICENSE). Docs released under [Creative Commons](https://github.com/twbs/bootstrap/blob/master/docs/LICENSE).
